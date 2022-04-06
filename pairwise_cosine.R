@@ -1,3 +1,8 @@
+library(nnls)
+cos.sim2 <- function(a, b){   #change name of function not to overlap with mutationalpatterns
+  return( sum(a*b)/sqrt(sum(a^2)*sum(b^2)) )
+}  
+
 datasetname <- "tMN"  
 nsigs <- list(tMN = 3) #number of de novo extracted signatures  
 signatures <- list()
